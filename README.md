@@ -4,3 +4,5 @@ This is a example of making a brand new GitHub repository
 The second user made some changes here.
 
 To get started, [install the earth-analytics-python conda environment](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-git-bash-conda/)
+
+The first user made some changes here.
