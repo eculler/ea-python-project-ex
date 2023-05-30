@@ -16,13 +16,13 @@ RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /home/jovyan/.bash_profile && 
 RUN . /opt/conda/etc/profile.d/conda.sh && conda activate base && python -m ipykernel install --user --name base     
 RUN source /home/jovyan/.bash_profile
 
-# Install JupyterLab widget extensions
-RUN jupyter labextension install \
-    ipyvolume \
-    itkwidgets \    
-    jupyterlab_iframe \ 
-    jupyter-leaflet \
-    jupyter-threejs \
- && npm cache clean --force
+# # Install JupyterLab widget extensions
+# RUN jupyter labextension install \
+#     ipyvolume \
+#     itkwidgets \    
+#     jupyterlab_iframe \ 
+#     jupyter-leaflet \
+#     jupyter-threejs \
+#  && npm cache clean --force
 
 RUN jupyter lab build
