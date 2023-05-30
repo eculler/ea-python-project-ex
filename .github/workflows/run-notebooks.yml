@@ -1,0 +1,19 @@
+name: Run All Notebooks
+
+on: workflow_dispatch
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+jobs:
+
+  notebook_test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run Notebooks in Docker Container
+      run: docker run eculler/example_env:latest
