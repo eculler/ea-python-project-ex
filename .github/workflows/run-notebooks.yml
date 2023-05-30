@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Run Notebooks in Docker Container
-      run: docker run eculler/example_env:latest
+      run: docker run eculler/example_env:latest jupyter run example-project.ipynb 
